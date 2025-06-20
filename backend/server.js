@@ -7,8 +7,6 @@ const app = express();
 app.use(cors());
 
 app.get('/api/transfers', (req, res) => {
-  console.log("returning this many transfers")
-  console.log(getTransfers().length)
   res.json(getTransfers());
 });
 
